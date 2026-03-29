@@ -457,7 +457,8 @@ footer{
 // 1. Go to https://formspree.io and create a free account
 // 2. Create a new form — you'll get an endpoint like:
 //    https://formspree.io/f/xPzAbCdE
-// 3. https://formspree.io/f/mnjopqeo// 4. That's it — emails will appear in your Formspree dashboard
+// 3. Replace YOUR_FORMSPREE_ID below with your form ID
+// 4. That's it — emails will appear in your Formspree dashboard
 //    and you can export them or connect to Mailchimp/Google Sheets
 //
 // FREE TIER: 50 submissions/month (enough to validate)
@@ -465,7 +466,8 @@ footer{
 //
 // ═══════════════════════════════════════════════════════
 
-https://formspree.io/f/mnjopqeo
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORMSPREE_ID';
+
 // Scroll reveal
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => { if(e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }});
